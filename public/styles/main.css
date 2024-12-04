@@ -6,22 +6,20 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 4rem;
+    box-sizing: border-box;
     background-color: #1e1e1e;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.35s ease;
     border-radius: 20px;
-    margin: 2rem;
-}
-
-.navbar-logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    order: 2;
-}
+    width: fill;
+    margin: 15px 20px;
+    z-index: 9999;
+    position: static; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
 
 .navbar-links {
     list-style: none;
@@ -31,17 +29,15 @@ body {
 }
 
 .navbar-links.left {
-    order: 1;
     margin-right: auto;
 }
 
 .navbar-links.right {
-    order: 2;
     margin-left: auto;
 }
 
 .navbar-links li {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .navbar-links a {
@@ -49,50 +45,40 @@ body {
     color: #ffffff;
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
-    transition: color 0.3s, background-color 0.3s, padding 0.3s;
+    font-size: 1.1rem;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5rem;
+    border-radius: 12px;
 }
 
 .navbar-links a span.material-icons {
-    margin-right: 1rem;
-    font-size: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1.6rem;
 }
 
 .navbar-links a:hover {
     color: #ffffff;
     background-color: #575757;
-    border-radius: 12px;
-    padding: 12px;
 }
 
-.navbar-links-no-text-right {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
 
-.navbar-links-no-text-right li {
-    margin-left: 2rem;
-}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
 
-.navbar-links-no-text-right a {
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    transition: color 0.3s, background-color 0.3s, padding 0.3s;
-}
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
 
-.navbar-links-no-text-right a:hover {
-    color: #ffffff;
-    background-color: #575757;
-    border-radius: 12px;
-    padding: 12px;
-}
+    .navbar-links li {
+        margin: 0.5rem 0;
+    }
 
-.navbar-links-no-text-right a:hover span.material-icons {
-    color: #ffffff;
-    transition: all 0.3s ease-in-out;
+    .navbar-links.left,
+    .navbar-links.right {
+        margin: 0.5rem 0;
+    }
 }
