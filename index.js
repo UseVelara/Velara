@@ -19,7 +19,7 @@ const routes = [
     { path: "/a", file: "apps.html" },
     { path: "/r", file: "ai.html" },
     { path: "/s", file: "settings.html" },
-    { path: "/m", file: "movies.html" },
+    { path: "/m", file: "media.html" },
     { path: "/!", file: "search.html" },
     { path: "/404", file: "404.html" },
 ];
