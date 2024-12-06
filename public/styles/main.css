@@ -28,12 +28,16 @@ body {
     padding: 0;
 }
 
-.navbar-links.left {
-    margin-right: auto;
+.navbar-links.left,
+.navbar-links.right {
+    font-weight: bold;
 }
+
 
 .navbar-links.right {
     margin-left: auto;
+    font-weight: bold;
+
 }
 
 .navbar-links li {
