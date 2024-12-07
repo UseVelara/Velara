@@ -1,11 +1,45 @@
-<div>
-   <center>
-      <form class="searchbar">
-         <input tag="searchbar" id="searchbar" placeholder="Search Google or Enter a Link" class="form__input"
-            autocomplete="off">
-      </form>
-   </center>
-</div>
-<script src="/assets/uv/js/index.js?v=1"></script>
-<script src="assets/uv/uv.bundle.js" defer></script>
-<script src="assets/uv/uv.config.js?cdn" defer></script>
+<!DOCTYPE html>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/typing.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-links left">
+            <li><a href="/"><span class="material-icons"></span> VELARA</a></li>
+        </ul>
+        <ul class="navbar-links right">
+            <li><a href="/r"><span class="material-icons">smart_toy</span> AI</a></li>
+            <li><a href="/m"><span class="material-icons">movie</span> MOVIES</a></li>
+            <li><a href="/g"><span class="material-icons">videogame_asset</span> GAMES</a></li>
+            <li><a href="/a"><span class="material-icons">apps</span> APPS</a></li>
+            <li><a href="/!"><span class="material-icons">search</span>SEARCH</a></li>
+            <li><a href="/s"><span class="material-icons">settings</span>SETTINGS</a></li>
+        </ul>
+    </nav>
+    <div>
+      <div class="search-bar">
+         <form id="uv-form">
+             <input style="text-align: center;" id="uv-search-engine" value="https://google.com/search?q=%s" type="hidden"/> 
+             <input id="uv-address" type="text" placeholder="Search with Google or enter a URL..."/>
+         </form>
+         <div class="desc left-margin">
+             <p id="uv-error"></p>
+             <pre id="uv-error-code"></pre>
+     </div>
+    <!-- settings scripts i hope they work :) -->
+    <script src="scripts/cloak.js"></script>
+    <script src="scripts/settings.js"></script>
+    <!-- other scripts  if these dont work i wanna die-->
+    <script src="/static/uv/uv.bundle.js" defer></script>
+    <script src="/static/uv/uv.config.js" defer></script>
+    <script src="/static/uv/uv.handler.js"></script>
+    <script src="/static/uv/uv.sw.js" defer></script>
+    <script src="/static/register-sw.js" defer></script>
+    <script src="/static/search.js" defer></script>
+    <script src="/static/index.js" defer></script>
+</body>
+</html>
