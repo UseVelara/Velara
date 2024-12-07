@@ -26,6 +26,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 .navbar-links.left {
@@ -84,4 +85,57 @@ body {
     .navbar-links.right {
         margin: 0.5rem 0;
     }
+}
+
+/* the buttons ig */
+.discord {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #315cfd;
+}
+
+.discord-button {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    line-height: 60px; 
+    border: 3px solid #315cfd;
+    border-radius: 10px;
+    background: white;
+    color: #315cfd;
+    font-size: 1.2em;
+    font-weight: 550;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.discord-button:hover {
+    border-color: white;
+    background: #315cfd;
+    color: white;
+    font-size: 1.3em; 
+    box-shadow: 0 0 15px #315cfd, 0 0 30px #315cfd;
+}
+.right-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #315cfd;
+}
+.left-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: #315cfd;
 }
